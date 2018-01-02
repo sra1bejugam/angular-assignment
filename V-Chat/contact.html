@@ -1,0 +1,33 @@
+<div id="register_webuser">
+  <div class="err" id="reg_add_err"></div>
+<form id="frmRegisterWebuser" action="login.php">
+<input type="hidden" id="private" name="private" />
+  <label style="color:black;" for="reg_email" >Email:</label>
+  <input type="email" id="reg_email" name="reg_email"  />
+  <label style="color:black;" for="username" >Username:</label>
+  <input type="text" id="username" name="username"  />
+  <label style="color:black;" for="zipcode" >Zipcode:</label>
+  <input type="text" id="zipcode" name="zipcode" />
+  <label style="color:black;" for="reg_password" >Password:</label>
+  <input type="password" id="reg_password" name="password"  />
+  <label style="color:black;" for="confpass" >Confirm Password:</label>
+  <input type="password" id="confpass" name="confpass"  />
+
+  <div class="inputdata">
+  <label style="color:black;" title="Share your shopping lists">Share:&nbsp;</label>
+  <span>
+  <div class="flatRoundedCheckbox" style="v-align:top;">
+  <input type="checkbox" title="Share your shopping lists" id="share" name="share"  checked onclick="toggleShared(this.checked);" />
+  </span>
+  <label for="share" id="label_share"></label>
+  <div class="clear"></div>
+  </div>
+  </div>
+
+  <label></label><br/>
+  <a id="register" href="#" class="greenbutton" >Register</a>
+  <a id="reg_cancel_hide" href="#" class="greenbutton" >Cancel</a>
+  <label></label><br/>
+
+</form>
+</div>
